@@ -6,3 +6,5 @@ The website is built with HTML, SASS, Bootstrap 4 and Angular to illustrate that
 
 # Future plans
 - Add post page
+- Add comments
+- Add gallery
