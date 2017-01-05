@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600");
+* {
+  margin: 0;
+  padding: 0; }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+::-webkit-scrollbar-thumb {
+  background: #d9534f; }
+
+::-webkit-scrollbar-track {
+  background: #000; }
+
+::selection {
+  background: #000;
+  color: #fff; }
+
+::-moz-selection {
+  background: #000;
+  color: #fff; }
+
+#SPA a:hover, #SPA a:focus {
+  text-decoration: none; }
+
+#SPA h2, #SPA h3, #SPA h4 {
+  font-weight: 400; }
+
+#SPA .form-control:focus {
+  border-color: #ff5f6d;
+  outline: none; }
+
+#SPA header {
+  background: #ff5f6d;
+  background: -moz-linear-gradient(left, #ff5f6d 0%, #ffc371 100%);
+  background: -webkit-linear-gradient(left, #ff5f6d 0%, #ffc371 100%);
+  background: linear-gradient(to right, #ff5f6d 0%, #ffc371 100%); }
+  #SPA header .navbar-brand {
+    color: #fff;
+    padding: 0.25rem 0.55rem;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    background: #111;
+    font-weight: 500; }
+  #SPA header h1 {
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
+    font-weight: 300;
+    cursor: default; }
+    @media (max-width: 400px) {
+      #SPA header h1 {
+        font-size: 3rem; } }
+  @media (max-width: 600px) {
+    #SPA header {
+      background: #ff5f6d;
+      background: -moz-linear-gradient(top, #ff5f6d 0%, #ffc371 100%);
+      background: -webkit-linear-gradient(top, #ff5f6d 0%, #ffc371 100%);
+      background: linear-gradient(to bottom, #ff5f6d 0%, #ffc371 100%); } }
+
+#SPA main .ng-enter {
+  animation: fadeIn 0.4s; }
+
+#SPA main #home .title {
+  padding: 0 10px; }
+  @media (max-width: 600px) {
+    #SPA main #home .title {
+      padding: 0; } }
+
+#SPA main #home .card {
+  border: 0;
+  background: #000;
+  color: #999;
+  min-width: 47%;
+  background-position: center center;
+  background-size: cover;
+  filter: grayscale(100%);
+  transition: 400ms ease all;
+  background-repeat: no-repeat;
+  cursor: pointer; }
+  #SPA main #home .card .date {
+    color: #818a91; }
+  #SPA main #home .card .overlay {
+    transition: 400ms ease all;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    height: 100%; }
+  #SPA main #home .card:hover {
+    filter: grayscale(0%); }
+    #SPA main #home .card:hover > .date {
+      color: #fff; }
+    #SPA main #home .card:hover > .overlay {
+      background-color: rgba(0, 0, 0, 0.75); }
+
+#SPA aside h4 {
+  margin-bottom: 1rem; }
+
+#SPA aside ul {
+  list-style: none; }
+  #SPA aside ul li {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+    #SPA aside ul li:last-child {
+      border: 0; }
+
+#SPA footer {
+  font-size: 0.9rem;
+  background: #111; }

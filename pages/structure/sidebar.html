@@ -1,0 +1,27 @@
+<div class="form-group mb-3 hidden-md-down">
+    <input class="form-control" placeholder="Search" ng-model="search">
+</div>
+
+
+
+<section class="mb-3">
+    <h4 class="text-primary">Info</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum gravida dolor, ac viverra nisl malesuada a. Duis molestie felis eget nisl aliquet, vitae pharetra urna bibendum.</p>
+</section>
+
+<section class="mb-3">
+    <h4 class="text-primary">Archive 
+        <a class="btn btn-sm btn-outline-primary float-xs-right" href="" ng-click="setLimit(4)" ng-hide="(limit === 4) || (items.length <= 4)">Show few</a>
+        <a class="btn btn-sm btn-outline-primary float-xs-right" href="" ng-click="setLimit(0)" ng-hide="items.length <= limit">Show all</a>
+    </h4>
+    <ul>
+        <li class="text-capitalize" ng-repeat="item in items | limitTo:limit"><a href="">{{item}} <span class="text-muted float-xs-right">25</span></a></li>
+    </ul>
+</section>
+
+<section class="my-3">
+    <h4 class="text-primary">Categories</h4>
+    <ul>
+        <li ng-repeat="data in post"><a href="">{{data.category}}<span class="float-xs-right text-muted">{{data.num}}</span></a></li>
+    </ul>
+</section>

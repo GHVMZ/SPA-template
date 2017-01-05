@@ -1,0 +1,32 @@
+<div id="home">
+<div class="title mb-2">
+
+<div class="form-group mb-3 hidden-md-up">
+    <input class="form-control" placeholder="Search" ng-model="search">
+</div>
+
+    <h2 ng-show="filteredResults.length > 0" class="text-primary">Latest posts</h2>
+
+    <div ng-show="filteredResults.length == 0">
+        <h2 class="text-primary">No posts</h2>
+        <p>Nothing found for <u class="text-danger">{{search}}</u>.</p>
+    </div>
+</div>
+
+<div class="card-deck m-0">
+    <div class="card mb-2" style="background-image: url('{{data.background}}');" ng-repeat="data in filteredResults = (post | filter : search)">
+        <div class="overlay">
+            <div class="p-3">
+                <a class="text-white" href=""><h2>{{data.title}}</h2></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum gravida dolor, ac viverra nisl malesuada a. Pellentesque nibh velit, euismod in lacus eget, pretium efficitur massa. Duis molestie felis eget nisl aliquet, vitae pharetra urna bibendum.</p>
+                <small class="date">{{data.date}}</small><a href="" class="float-xs-right"><small>{{data.category}}</small></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="title mb-3" ng-show="filteredResults.length > 0">
+    <a href="" class="btn btn-md btn-outline-primary">View all</a>
+</div>
+
+</div>

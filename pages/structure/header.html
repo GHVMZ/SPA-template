@@ -1,0 +1,19 @@
+<header class="text-white">
+    <div class="container py-2">
+        
+        <nav class="navbar-dark mb-3">
+
+            <div class="collapse navbar-toggleable-xs float-sm-right pb-2" id="toggleMobile">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item text-capitalize" ng-repeat="x in menu"><a class="nav-link" ng-href="#/{{x}}">{{x}}</a></li>
+                </ul>
+            </div>
+
+            <a class="navbar-brand bg-danger" ng-href="#/home">Single Page App</a>
+            <button class="navbar-toggler hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#toggleMobile" aria-controls="toggleMobile" aria-expanded="false" aria-label="Toggle navigation"></button>
+        </nav>
+
+
+        <h1 class="m-0 py-3 text-capitalize" ng-bind="$root.title"></h1>
+    </div>
+</header>
