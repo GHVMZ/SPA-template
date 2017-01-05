@@ -5,6 +5,6 @@
 The website is built with HTML, SASS, Bootstrap 4 and Angular to illustrate that you can turn any static HTML site to a very fast single page application with smooth transitions.
 
 # Future plans
-- Add post page
+- Add unique post page
 - Add comments
 - Add gallery
