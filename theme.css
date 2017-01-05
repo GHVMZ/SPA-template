@@ -59,7 +59,7 @@
       background: linear-gradient(to bottom, #ff5f6d 0%, #ffc371 100%); } }
 
 #SPA main .ng-enter {
-  animation: fadeInUp 0.4s; }
+  animation: fadeIn 0.4s; }
 
 #SPA main #home .title {
   padding: 0 10px; }
